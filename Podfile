@@ -7,6 +7,7 @@ target 'Tumblr' do
 
   # Pods for Tumblr
 
-  pod ‘AFNetworking’
+  pod ‘AFNetworking’ 
+  pod ‘MBProgressHUD’
 
 end

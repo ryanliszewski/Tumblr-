@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import MBProgressHUD
 
 class PhotosViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -21,7 +22,8 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 240
-
+       
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         
         let url = URL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV")
         let request = URLRequest(url: url!)
@@ -37,9 +39,8 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                 if let data = data {
                     if let responseDictionary = try! JSONSerialization.jsonObject(
                         with: data, options:[]) as? NSDictionary {
-                        print("responseDictionary: \(responseDictionary)")
                         
-                      
+                        MBProgressHUD.hide(for: self.view, animated: true)
                         let responseFieldDictionary = responseDictionary["response"] as! NSDictionary
                         
                         // This is where you will store the returned array of posts in your posts property
@@ -49,9 +50,9 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
                     }
                 }
         });
+        
         task.resume()
         
-
         // Do any additional setup after loading the view.
     }
 
