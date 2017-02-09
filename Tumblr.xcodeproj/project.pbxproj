@@ -14,6 +14,7 @@
 		738BDD461E42D4180024603D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738BDD441E42D4180024603D /* Main.storyboard */; };
 		738BDD481E42D4180024603D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738BDD471E42D4180024603D /* Assets.xcassets */; };
 		738BDD4B1E42D4180024603D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738BDD491E42D4180024603D /* LaunchScreen.storyboard */; };
+		738D30F91E4C1902000EE2A8 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738D30F81E4C1902000EE2A8 /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		738BDD471E42D4180024603D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		738BDD4A1E42D4180024603D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		738BDD4C1E42D4180024603D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		738D30F81E4C1902000EE2A8 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		7CA28915B6E754D35E8545F5 /* Pods_Tumblr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tumblr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF80AAE1CE0CFD0C8E0ED6C8 /* Pods-Tumblr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumblr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tumblr/Pods-Tumblr.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +58,7 @@
 			children = (
 				735AD51D1E42D63A0061E1B3 /* PhotosViewController.swift */,
 				735AD5201E42DAB60061E1B3 /* PhotoCell.swift */,
+				738D30F81E4C1902000EE2A8 /* PhotoDetailViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			files = (
 				738BDD411E42D4180024603D /* AppDelegate.swift in Sources */,
 				735AD5211E42DAB60061E1B3 /* PhotoCell.swift in Sources */,
+				738D30F91E4C1902000EE2A8 /* PhotoDetailViewController.swift in Sources */,
 				735AD51E1E42D63A0061E1B3 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
